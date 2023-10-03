@@ -723,7 +723,7 @@ class Canvas(
         p = self._painter
         p.begin(self)
         p.setRenderHint(QtGui.QPainter.Antialiasing)
-        p.setRenderHint(QtGui.QPainter.SmoothPixmapTransform)
+        #p.setRenderHint(QtGui.QPainter.SmoothPixmapTransform) #evitar el suavizado
 
         p.scale(self.scale, self.scale)
         p.translate(self.offset_to_center())
